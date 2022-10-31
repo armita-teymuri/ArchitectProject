@@ -1,0 +1,218 @@
+/* about section */
+.about-container {
+  width: 100%;
+  background-image: url(/media/images/about-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+}
+.about-btn {
+  width: 250px;
+  height: 90px;
+  padding: 15px;
+  background-image: url(/media/images/about-btn-bg.png);
+  text-align: center;
+  border: 1px solid gainsboro;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+.about-btn h3 {
+  font-size: 42px;
+  font-weight: 900;
+}
+.about-box {
+  width: 450px;
+  height: 500px;
+  border: 20px solid #d7b39a;
+  margin: 50px 0 0 10%;
+}
+.about-box p {
+  font-size: 13px;
+  padding: 20px;
+  line-height: 25px;
+}
+.about-box h3 {
+  padding: 20px;
+  font-size: 35px;
+  font-weight: 800;
+}
+.about-read-more-btn {
+  width: 190px;
+  height: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  margin-left: 20px;
+  text-align: center;
+  padding: 18px;
+  letter-spacing: 5px;
+}
+.about-galery {
+  position: relative;
+  margin: 50px 0 0 30px;
+  width: 600px;
+  height: 600px;
+}
+.about-slider {
+  width: 370px;
+  height: 500px;
+  z-index: -2;
+  overflow: hidden;
+}
+.about-slider img {
+  width: 100%;
+  height: 500px;
+  transition: transform 3s;
+}
+.about-slider li:hover img {
+  transform: scale(1.5);
+}
+.about-slider a {
+  color: rgba(0, 0, 0, 0);
+}
+.about-image {
+  width: 370px;
+  height: 500px;
+  background-image: url(/media/images/about-6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -3;
+}
+/* responsaive for mobile(320/481) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* about responsiv mobile */
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-btn {
+    width: 200px;
+    height: 60px;
+    padding: 5px;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .about-btn h3 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .about-box {
+    width: 93%;
+    border: 20px solid #d7b39a;
+    margin: 30px 0 0 10px;
+  }
+  .about-box p {
+    padding: 20px;
+  }
+  .about-box h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .about-read-more-btn {
+    width: 150px;
+    height: 40px;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 12px;
+  }
+  .about-image {
+    display: none;
+  }
+  .about-galery {
+    position: relative;
+    margin: 30px 0 0 10px;
+    width: 93%;
+    height: 400px;
+  }
+  .about-slider {
+    width: 100%;
+    height: 400px;
+    z-index: -2;
+    overflow: hidden;
+  }
+}
+/* responsaive for tablet(481/768) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* about section */
+  .about-container {
+    flex-direction: column;
+    margin: 0 0 0 0;
+    height: auto;
+  }
+  .about-box {
+    width: 470px;
+    height: auto;
+    margin: 30px auto;
+  }
+  .about-read-more-btn {
+    margin-bottom: 30px;
+  }
+  .about-galery {
+    width: 100%;
+    margin: 30px auto;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+  .about-slider {
+    width: 350px;
+    margin-right: 120px;
+  }
+  .about-slider img {
+    height: 450px;
+  }
+  .about-image {
+    width: 350px;
+    height: 450px;
+    margin: auto;
+    right: unset;
+    margin-left: 120px;
+  }
+}
+
+/* responsaive for laptop(769/1024) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* about section */
+  .about-container {
+    flex-direction: column;
+    margin: 0 0 0 0;
+    height: auto;
+  }
+  .about-box {
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+  }
+  .about-read-more-btn {
+    margin-bottom: 30px;
+  }
+  .about-galery {
+    width: 100%;
+    margin: 30px auto;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+  .about-slider {
+    width: 350px;
+    margin-right: 150px;
+  }
+  .about-slider img {
+    height: 450px;
+  }
+  .about-image {
+    width: 350px;
+    height: 450px;
+    margin: auto;
+    right: unset;
+    margin-left: 170px;
+  }
+}

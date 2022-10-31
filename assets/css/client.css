@@ -1,0 +1,113 @@
+/* clients section */
+.row7 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 670px;
+  background-image: url(/media/images/infografic-bg2.jpg);
+}
+.clients-btn {
+  width: 300px;
+  height: 70px;
+  background-color: white;
+  background-image: url(/media/images/about-btn-bg.png);
+  text-align: center;
+  padding: 3px;
+  border: 1px solid gainsboro;
+  margin-left: 10%;
+  margin-top: 90px;
+}
+.client-container {
+  margin-left: 10%;
+  margin-top: 40px;
+  height: 60%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.client-container img {
+  margin: 0 30px 20px 0;
+  border: 1px solid rgb(230, 218, 218);
+  width: 250px;
+  height: 170px;
+  padding: 30px;
+}
+.row7 strong {
+  display: inline-block;
+  font-size: 80px;
+  line-height: 80px;
+  color: #0000001a;
+  font-weight: 700;
+  letter-spacing: 20px;
+  transform: rotate(270deg);
+  position: absolute;
+  right: 80px;
+  top: 0;
+  white-space: nowrap;
+  transform-origin: center right;
+}
+/* responsaive for mobile(320/481) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* client section responsive for mobile */
+  .clients-btn {
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .clients-btn h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .row7 {
+    height: fit-content;
+  }
+  .row7 strong {
+    display: none;
+  }
+  .client-container {
+    margin-left: 0;
+    width: 98%;
+    height: fit-content;
+    justify-content: space-evenly;
+  }
+  .client-container img {
+    margin: 30px 0 0 0;
+    width: 185px;
+  }
+}
+/* responsaive for tablet(481/768) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  /* client section responsive for mobile */
+  .clients-btn {
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .clients-btn h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .row7 {
+    height: fit-content;
+  }
+  .row7 strong {
+    display: none;
+  }
+  .client-container {
+    margin-left: 0;
+    width: 98%;
+    height: fit-content;
+    justify-content: space-evenly;
+  }
+  .client-container img {
+    margin: 30px 0 0 0;
+    width: 40%;
+  }
+}

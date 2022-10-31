@@ -1,0 +1,245 @@
+/* header style */
+#head {
+  width: 100%;
+}
+.header-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+/* navigation */
+.navbar {
+  width: 100%;
+  position: fixed;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  z-index: 4;
+  background-color: white;
+  height: 135px;
+}
+/* contact bar */
+.contact-bar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  text-align: right;
+  width: 100%;
+  background-color: #eef1f2;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.nav-logo {
+  width: 200px;
+  margin-top: 34px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #eef1f2;
+  z-index: 4;
+  padding: 20px;
+}
+.nav-logo img {
+  width: 100%;
+  height: 85%;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 65px;
+  position: absolute;
+  left: 84%;
+}
+.search-icon {
+  margin-right: 10px;
+}
+
+.info-button > button {
+  width: 150px;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid rgb(173, 171, 171, 0.5);
+  transition: all 1s linear;
+}
+.info-button > button:hover {
+  border: 1px solid #d7b39a;
+  background-color: #d7b39a;
+  color: white;
+}
+.info-button a {
+  text-decoration: none;
+  color: black;
+}
+.info-button > button:hover a {
+  color: white;
+}
+/* menu */
+.menu {
+  height: 100px;
+  margin-top: 34px;
+  background-color: white;
+  padding-top: 17px;
+  margin-left: 200px;
+  position: absolute;
+}
+.menu ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu ul li {
+  z-index: 4;
+  position: relative;
+  font-weight: bold;
+  height: 100%;
+  padding: 10px;
+  padding-top: 28px;
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+}
+.menu ul li a:hover {
+  color: #d7b39a;
+  text-decoration: none;
+}
+.menu ul li a {
+  color: black;
+  text-decoration: none;
+}
+.menu ul li a.current {
+  color: #d7b39a;
+}
+.menu ul ul {
+  z-index: 7;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 0;
+}
+.menu ul ul li {
+  padding-top: 15px;
+  height: 50px;
+  text-align: left;
+  background-color: #1a1d1f;
+  min-width: 200px;
+}
+.menu ul ul li a {
+  font-weight: 300;
+  color: white;
+}
+.menu ul ul li:hover {
+  background-color: #d7b39a;
+}
+.menu ul li:hover > ul {
+  display: block;
+}
+.menu ul ul ul {
+  position: absolute;
+  margin-left: 5px;
+  left: 100%;
+  top: 0;
+}
+/* responsaive for mobile(320/481) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 0pxpx;
+    font-weight: 400;
+  }
+  .head {
+    width: 100%;
+  }
+  /* navigation */
+  .navbar {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+  }
+  /* contact bar */
+  .contact-bar {
+    display: none;
+  }
+
+  .nav-logo {
+    width: 30%;
+    height: 100px;
+    margin-top: 0px;
+    background-color: white;
+  }
+  .search-bar {
+    height: 100px;
+    margin-top: 0;
+    left: 40%;
+  }
+  .menu {
+    display: none;
+    margin-top: 0;
+    margin-left: 0px;
+  }
+  .menu ul {
+    display: none;
+  }
+  .menu-icon {
+    position: absolute;
+    right: 10px;
+  }
+}
+/* responsaive for tablet and laptop(481/1024) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  /* contact bar */
+  .contact-bar {
+    width: 100%;
+    background-color: red;
+  }
+  .search-bar {
+    left: 56%;
+  }
+  /* navigation */
+  .navbar {
+    background-color: white;
+    height: 105px;
+  }
+  .nav-logo {
+    width: 150px;
+    height: 71px;
+    background-color: white;
+    padding: 15px;
+  }
+  .search-bar {
+    margin-top: 50px;
+    position: absolute;
+    right: 45px;
+    left: unset;
+  }
+  .info-button > button {
+    width: 130px;
+  }
+  /* menu */
+  .menu {
+    display: none;
+  }
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,313 @@
+/* infographic section */
+.row4 {
+  width: 100%;
+  display: flex;
+}
+.infographic-container {
+  z-index: -2;
+  width: 50%;
+  height: 100%;
+  background-image: url(/media/images/infografic-bg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.infographic-btn {
+  width: 350px;
+  height: 90px;
+  background-color: white;
+  background-image: url(/media/images/about-btn-bg.png);
+  text-align: center;
+  padding: 15px;
+  border: 1px solid gainsboro;
+  margin-left: 5%;
+  margin-top: 100px;
+}
+
+.testimonial-container {
+  width: 50%;
+  height: 100%;
+  background-image: url(/media/images/infografic-bg2.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.testimonial-container img {
+  margin-left: 35px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.graphist {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+}
+.grafist-name {
+  margin-left: 15px;
+}
+.grafist-name p {
+  padding-top: 20px;
+}
+.graphist span {
+  display: inline-block;
+  top: 0;
+  font-size: 70px;
+  color: #d7b39a;
+  margin-left: 200px;
+}
+.resume {
+  width: 80%;
+  background-color: white;
+  margin: 30px 0 30px 30px;
+}
+.resume p {
+  padding: 30px 30px 0 30px;
+  line-height: 30px;
+}
+.infographic-box-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.infographic-box {
+  width: 300px;
+  height: 170px;
+  margin: 10px;
+  background-color: white;
+  background-image: url(/media/images/bg-5.png);
+  background-repeat: repeat;
+  position: relative;
+}
+.infographic-box h3 {
+  position: absolute;
+  top: 40px;
+  font-size: 45px;
+  font-weight: 700;
+  color: #d7b39a;
+  margin-left: 30px;
+}
+.infographic-box p {
+  position: absolute;
+  top: 80px;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  padding: 30px;
+}
+/* responsaive for mobile(320/481) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* infography responsiv for mobile */
+  .row4 {
+    margin-top: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .infographic-container {
+    width: 100%;
+    height: 850px;
+  }
+  .infographic-btn {
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .infographic-btn h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .infographic-box-container {
+    width: 100%;
+    height: 700px;
+  }
+  .infographic-box {
+    width: 100%;
+    height: 150px;
+  }
+  .testimonial-container {
+    width: 100%;
+    height: 900px;
+  }
+  .testimonial-container img {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .graphist {
+    padding-left: 120px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    text-align: center;
+  }
+  .grafist-name {
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  .grafist-name p {
+    padding-top: 20px;
+  }
+  .graphist span {
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .resume {
+    width: 80%;
+    background-color: white;
+    margin: 30px 0 0 30px;
+  }
+  .resume p {
+    padding: 30px 0 0 10px;
+    line-height: 30px;
+  }
+}
+/* responsaive for small tablet(481/575) */
+@media screen and (min-width: 481px) and (max-width: 575px) {
+  /* info graphi section */
+  .row4 {
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .infographic-container {
+    width: 100%;
+    height: fit-content;
+  }
+  .infographic-btn {
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .infographic-btn h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .infographic-box-container {
+    width: 100%;
+    height: auto;
+  }
+  .infographic-box {
+    width: 100%;
+    height: 150px;
+  }
+  .testimonial-container {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+  .graphist {
+    position: relative;
+  }
+  .grafist-name h2 {
+    font-size: 20px;
+  }
+  .grafist-name p {
+    padding-top: 20px;
+  }
+  .graphist span {
+    display: inline-block;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    font-size: 25px;
+    margin-left: 150px;
+  }
+}
+/* responsaive for large tablet(576/768) */
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+  /* infography responsiv for mobile */
+  .row4 {
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .infographic-container {
+    width: 100%;
+    height: fit-content;
+  }
+  .infographic-btn {
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .infographic-btn h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .infographic-box-container {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .infographic-box {
+    width: 40%;
+    height: 170px;
+    margin: 30px 0 30px 0;
+    background-color: white;
+    background-image: url(/media/images/bg-5.png);
+    background-repeat: repeat;
+    position: relative;
+  }
+  .infographic-box span {
+    position: absolute;
+    top: 40px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #d7b39a;
+    margin-left: 30px;
+  }
+  .infographic-box p {
+    position: absolute;
+    top: 80px;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    padding: 30px;
+  }
+  .testimonial-container {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+
+  .grafist-name h2 {
+    font-size: 20px;
+  }
+  .grafist-name p {
+    padding-top: 20px;
+  }
+  .graphist span {
+    display: inline-block;
+    top: unset;
+    bottom: 0;
+    right: 0;
+    font-size: 70px;
+    margin-left: 50%;
+  }
+}

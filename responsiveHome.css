@@ -1,0 +1,25 @@
+@media screen and (max-width: 992px) {
+  .back-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+  }
+  .menu ul {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-icon {
+    display: none;
+    padding: 5px;
+  }
+}

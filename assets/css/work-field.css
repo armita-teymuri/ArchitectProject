@@ -1,0 +1,332 @@
+/* work field container */
+
+#work-field {
+  position: relative;
+  height: 900px;
+  width: 100%;
+  background-image: url(/media/images/bg-5.png);
+  background-repeat: repeat;
+  z-index: -5;
+}
+.work-btn {
+  width: 350px;
+  height: 90px;
+  padding: 15px;
+  background-image: url(/media/images/about-btn-bg.png);
+  text-align: center;
+  border: 1px solid gainsboro;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+.work-btn h3 {
+  font-size: 42px;
+  font-weight: 900;
+}
+.work-gallery-container {
+  margin-left: 8%;
+  display: flex;
+  align-content: center;
+}
+.work-box {
+  margin-top: 30px;
+  margin-left: 40px;
+  width: 335px;
+  height: 600px;
+}
+.work-box span {
+  font-size: 45px;
+  font-weight: 700;
+  color: #d7b39a;
+  padding: 140px;
+}
+.work-gallery {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+}
+.work-gallery img {
+  width: 100%;
+  height: 335px;
+}
+.work-container {
+  display: flex;
+  flex-direction: row;
+}
+.work-img2 {
+  margin-top: 80px;
+}
+.work-img3 {
+  margin-top: 110px;
+}
+.work-img p {
+  padding-top: 20px;
+}
+.work-img4 {
+  height: 900px;
+  width: 110px;
+  background-image: url(/media/images/bg-side.jpg);
+  background-attachment: fixed;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.work-text-container {
+  display: flex;
+  width: 80%;
+  background-color: #eef1f2;
+  position: absolute;
+  bottom: 55px;
+  left: 10%;
+}
+.work-text-container h3 {
+  padding: 30px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.work-text-container p {
+  padding: 30px;
+  text-align: left;
+}
+.work-text-container a {
+  padding: 30px 0 0 30px;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 550;
+}
+/* responsaive for mobile(320/481) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* work section for mobile */
+  #work-field {
+    position: relative;
+    width: 100%;
+    height: 1500px;
+    background-image: url(/media/images/bg-5.png);
+    background-repeat: repeat;
+    z-index: -5;
+  }
+  .work-btn {
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 10px;
+    background-image: url(/media/images/about-btn-bg.png);
+  }
+  .work-btn h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .work-gallery-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .work-img3 {
+    margin-top: 50;
+    margin-left: 0;
+  }
+  .work-box {
+    margin: 0 auto;
+    width: 100%;
+    height: 450px;
+  }
+  .work-img1 {
+    margin: 0;
+  }
+  .work-img2 {
+    margin: 0;
+    margin-top: 0;
+  }
+  .work-img3 {
+    margin-top: 0;
+  }
+  .work-img4 {
+    display: none;
+  }
+  .work-text-container {
+    background-color: red;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    top: 100%;
+  }
+  .work-text-container h3 {
+    padding: 18px;
+    font-size: 25px;
+  }
+  .work-text-container p {
+    padding: 18px;
+    line-height: 20px;
+  }
+  .work-text-container a {
+    padding: 30px 0 20px 18px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+  }
+}
+/* responsaive for small tablet(481/575) */
+@media screen and (min-width: 481px) and (max-width: 575px) {
+  /* work section */
+  #work-field {
+    position: relative;
+    width: 100%;
+    height: 1500px;
+    background-image: url(/media/images/bg-5.png);
+    background-repeat: repeat;
+    z-index: -5;
+  }
+  .work-btn {
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 10px;
+    background-image: url(/media/images/about-btn-bg.png);
+  }
+  .work-btn h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .work-gallery-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .work-img3 {
+    margin-top: 50;
+    margin-left: 0;
+  }
+  .work-box {
+    margin: 10px auto;
+    width: unset;
+    height: 450px;
+  }
+  .work-box span {
+    margin: auto;
+
+    padding: 140px;
+  }
+  .work-img1 {
+    margin: 0;
+  }
+  .work-img2 {
+    margin: 0;
+    margin-top: 0;
+  }
+  .work-img3 {
+    margin-top: 0;
+  }
+  .work-img4 {
+    display: none;
+  }
+  .work-text-container {
+    background-color: red;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    top: 100%;
+  }
+  .work-text-container h3 {
+    padding: 18px;
+    font-size: 25px;
+  }
+  .work-text-container p {
+    padding: 18px;
+    line-height: 20px;
+  }
+  .work-text-container a {
+    padding: 30px 0 20px 18px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+  }
+}
+/* responsaive for large tablet(576/768) */
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+  /* work field container */
+
+  #work-field {
+    height: auto;
+  }
+  .work-btn {
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 10px;
+    background-image: url(/media/images/about-btn-bg.png);
+  }
+  .work-btn h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .work-gallery-container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .work-box {
+    width: 260px;
+    height: 350px;
+    text-align: center;
+    margin: 30px 20px;
+  }
+  .work-box span {
+    padding: 0;
+  }
+  .work-gallery {
+    height: 300px;
+  }
+  .work-gallery img {
+    height: 250px;
+  }
+  .work-container {
+    flex-direction: column;
+  }
+  .work-img2 {
+    margin-top: unset;
+  }
+  .work-img3 {
+    margin-top: unset;
+  }
+  .work-img4 {
+    display: none;
+  }
+  .work-text-container {
+    flex-direction: column;
+    margin: auto;
+    position: unset;
+    bottom: unset;
+    left: unset;
+    margin-bottom: 30px;
+  }
+  .work-text-container h3 {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .work-text-container p {
+    padding: 20px;
+    text-align: left;
+  }
+}
